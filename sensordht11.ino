@@ -39,7 +39,7 @@ void loop() {
   
   // Limpiar la pantalla antes de mostrar los nuevos datos
   display.clearDisplay();
-  temperature=temperature;
+  
   // Mostrar la temperatura y la humedad en la pantalla OLED
   display.setTextSize(1);
   display.setTextColor(WHITE);
