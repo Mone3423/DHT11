@@ -62,15 +62,20 @@ void loop() {
   display.println("BMP280 datos sensor:");
   display.setTextColor(SH110X_WHITE);
   display.println("---------------------");
-
+//Medir temperatura
   display.print("Temperatura: \n ");
   display.print(temp_event.temperature);
   display.println(" *C");
   display.println();
-
+//Medir Presión
   display.print("Presion: \n ");
   display.print(pressure_event.pressure * 100);
   display.println(" Pa");
+//Medir Altura
+  display.print("Altitud: \n ");
+  display.print(altitude);
+  display.println(" m.s.n.m");
+
 
   display.display();
   delay(2000);
